@@ -1,38 +1,305 @@
-.App {
-  text-align: center;
+
+.App{
+  background: #F4F8FA;
+width: 100%;
+height: 100vh;
+position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin-top: 130px;
+  font-family: 'WOrk Sans',  sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #1B31A8;
+
+}
+.container {
+  height: 500px;
+  width: 560px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+ /* container */
+   position: absolute;
+   left: 0%;
+   right: 0%;
+   top: 0%;
+   bottom: 0%;
+   max-width: 100%;
+   max-height: 100%;
+   overflow: auto;
+   margin: auto;
+
+/* $neutralWhite */
+  background: #FFFFFF;
+
+/* $level4 */
+box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.08);
+border-radius: 8px;  
+
 }
 
-.App-link {
-  color: #61dafb;
+.LoanTypes {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.LoanTypesImg {
+  height: 75px;
+  width: 75px;
+  border-radius: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.LoanAmount {
+ margin-left: 10px;
+}
+.LoanSpecs {
+  display: flex;
+  justify-content: space-around;
+  width: 560px;
+  margin: auto;
+  margin-top: 20px;
+}
+  
+  
+  .AmountSpan {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #1E2A32;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
   }
-  to {
-    transform: rotate(360deg);
+  .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .LoanAmountInput{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    border: 1px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 56px;
+    width: 272px;
+  }
+  .AmountInput{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: 600;
+    color:  #4D6475;
+  }
+  .LoanAmountInput:focus{
+    border: 1px solid #E9EEF2;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+  }
+  label{
+    font-size: 23px;
+    color: #CBD5DC;
+    font-family: 'Work Sans';
+    margin-left: 20px;
+  }
+  .LoanMonthInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 56px;
+    width: 160px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4px;
+  }
+  .MonthSpan {
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 14px;
+    color: #1E2A32;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .MonthInput{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    width: 70px;
+    text-align: center;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: #708797;
+
+  }
+  .MonthInput:focus{
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+  }
+
+
+
+.LoanInfos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  Width :500px;
+  Height :155px;
+  border: 1px solid #E9EEF2  ;
+  box-sizing: border-box;
+  border-radius: 8px; 
+  margin-top: 20px;
+}
+.section1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.section2{
+  display: flex;
+  background-color: #F4F8FA;
+  width: 100%;
+  height: 80px;
+  font-family:'Work Sans' ;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+
+.section1-title {
+  font-family: 'Work Sans';
+  font-size: 20px;
+  line-height: 24px;
+}
+.section1-total{
+  color:#0079FF ;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Rubik';
+}
+
+button {
+  margin-left: 130px;
+  margin-top: 40px;
+  background: #1B31A8;
+  border-radius: 32px;
+  color: #FFFFFF;
+  border-style: none;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+/* identical to box height, or 125% */
+  width: 320px;
+  height: 56px;
+  text-align: center;
+
+/* $neutralWhite */
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 390px) {
+   
+  .container {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    margin: auto;
+    width: 389px;
+    height: 586px;
+
+  }
+
+  .LoanSpecs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .LoanInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    Width :350px;
+    Height :155px;
+    margin-top: 20px;
+   
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+  width: 350px;
+  height: 56px;
+  }
+  .LoanMonthInput{
+    height: 56px;
+    width: 350px;
+   
+  }
+  .right{
+    margin-top: 10px;
+  }
+  .LoanAmountInput {
+    width: 350px;
+  }
+
+  .title {
+    margin-top: 10px;
   }
 }
